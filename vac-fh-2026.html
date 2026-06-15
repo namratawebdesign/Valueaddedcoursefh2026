@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>VAC FH·2026 — Value Added Courses Catalogue</title>
+<meta name="description" content="An editorial catalogue of Value Added Courses across seven engineering departments."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root { --ink:#1a1622; --paper:#f7f3e8; --acid:#e8c700; --haze:#6b6577; }
+  html,body{background:var(--paper);color:var(--ink);}
+  body{
+    font-family:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;
+    font-feature-settings:"ss01","ss02";
+    background-image:
+      radial-gradient(1200px 600px at 90% -10%, rgba(232,199,0,0.35), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgba(26,22,34,0.12), transparent 60%);
+    background-attachment:fixed;
+  }
+  .font-display{font-family:'Instrument Serif',ui-serif,Georgia,serif;font-weight:400;letter-spacing:-0.02em;}
+  .font-mono{font-family:'JetBrains Mono',ui-monospace,monospace;}
+  .grain{position:relative;}
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0.08;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .ticker{animation:ticker 40s linear infinite;}
+  @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .chip.active{border-color:#000;background:#000;color:var(--paper);}
+</style>
+</head>
+<body class="min-h-screen">
+<main>
+  <header class="mx-auto flex max-w-7xl items-center justify-between px-6 pt-8 font-mono text-xs uppercase tracking-[0.18em] text-black/60">
+    <span>VAC · Catalogue</span>
+    <span class="hidden sm:inline">First Half · Academic Year 2026</span>
+    <span>Vol. 01 / Iss. 06</span>
+  </header>
+
+  <section class="mx-auto max-w-7xl px-6 pt-10 pb-16">
+    <div class="grid items-end gap-8 md:grid-cols-12">
+      <div class="md:col-span-9">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-black/60">17 courses · 7 departments · Open registrations</p>
+        <h1 class="font-display mt-6 leading-[0.92]" style="font-size:clamp(3.2rem,9vw,8.5rem)">
+          Value <em class="italic">Added</em><br/>Courses<span style="color:#e8c700">.</span>
+        </h1>
+      </div>
+      <div class="md:col-span-3">
+        <p class="text-base leading-relaxed text-black/80">A working catalogue of hands-on, faculty-led short programs across the engineering departments — from <span class="font-display italic">quantum computing</span> to <span class="font-display italic">agentic AI</span>, blockchain, forensics and antenna design.</p>
+        <a href="#catalogue" class="mt-6 inline-flex items-center gap-2 rounded-full bg-black px-5 py-3 text-sm font-medium text-[#f7f3e8] transition hover:opacity-90">Browse the catalogue <span aria-hidden>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="grain overflow-hidden border-y border-black/15 bg-black text-[#f7f3e8]">
+    <div class="ticker flex whitespace-nowrap py-4 font-display text-3xl md:text-4xl"><div class="flex shrink-0 items-center gap-10 px-6"><span class="flex items-center gap-10"><span class="italic">Sensors & IoT</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Digital Forensics</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Reinforcement Learning</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">VAPT</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Hardware Hacking</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Large Language Models</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Antenna Design</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Agentic AI</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Full-Stack Dev</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">DevOps · Cloud</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Blockchain</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Web App Security</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">AI Analytics & DSP</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">HPC & Quantum</span><span style="color:#e8c700">✦</span></span></div><div class="flex shrink-0 items-center gap-10 px-6"><span class="flex items-center gap-10"><span class="italic">Sensors & IoT</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Digital Forensics</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Reinforcement Learning</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">VAPT</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Hardware Hacking</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Large Language Models</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Antenna Design</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Agentic AI</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Full-Stack Dev</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">DevOps · Cloud</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Blockchain</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">Web App Security</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">AI Analytics & DSP</span><span style="color:#e8c700">✦</span></span><span class="flex items-center gap-10"><span class="italic">HPC & Quantum</span><span style="color:#e8c700">✦</span></span></div></div>
+  </div>
+
+  <section id="catalogue" class="mx-auto max-w-7xl px-6 py-20">
+    <div class="flex flex-wrap items-end justify-between gap-6 border-b border-black/20 pb-6">
+      <div>
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-black/60">§ 02 — Programs</p>
+        <h2 class="font-display mt-2 text-5xl md:text-6xl">The catalogue</h2>
+      </div>
+      <div id="chips" class="flex flex-wrap gap-2"><button data-f="ALL" class="chip active rounded-full border px-4 py-2 font-mono text-xs uppercase tracking-widest transition border-black bg-black text-[#f7f3e8]">All <sup class="ml-1 opacity-60">17</sup></button><button data-f="ECS" class="chip rounded-full border px-4 py-2 font-mono text-xs uppercase tracking-widest transition border-black/20 text-black/70 hover:border-black/60 hover:text-black">ECS <sup class="ml-1 opacity-60">1</sup></button><button data-f="IT" class="chip rounded-full border px-4 py-2 font-mono text-xs uppercase tracking-widest transition border-black/20 text-black/70 hover:border-black/60 hover:text-black">IT <sup class="ml-1 opacity-60">3</sup></button><button data-f="CSE-IOT" class="chip rounded-full border px-4 py-2 font-mono text-xs uppercase tracking-widest transition border-black/20 text-black/70 hover:border-black/60 hover:text-black">CSE-IOT <sup class="ml-1 opacity-60">2</sup></button><button data-f="EXTC" class="chip rounded-full border px-4 py-2 font-mono text-xs uppercase tracking-widest transition border-black/20 text-black/70 hover:border-black/60 hover:text-black">EXTC <sup class="ml-1 opacity-60">2</sup></button><button data-f="AIML" class="chip rounded-full border px-4 py-2 font-mono text-xs uppercase tracking-widest transition border-black/20 text-black/70 hover:border-black/60 hover:text-black">AIML <sup class="ml-1 opacity-60">2</sup></button><button data-f="AIDS" class="chip rounded-full border px-4 py-2 font-mono text-xs uppercase tracking-widest transition border-black/20 text-black/70 hover:border-black/60 hover:text-black">AIDS <sup class="ml-1 opacity-60">3</sup></button><button data-f="CE" class="chip rounded-full border px-4 py-2 font-mono text-xs uppercase tracking-widest transition border-black/20 text-black/70 hover:border-black/60 hover:text-black">CE <sup class="ml-1 opacity-60">4</sup></button></div>
+    </div>
+    <ol id="rows" class="mt-2">
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="ECS">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">01</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">ECS</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Real Time IoT Systems and Sensor Applications</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">IoT</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Sensors</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Real-time</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Nita Patil</div>
+        <div class="mt-1 font-mono text-xs text-black/60">98201 29367</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/nitap_sies_edu_in/IQCVjY4kfYCsQZzCVx11ao0uATqDw9TBVoG3k0_1dkilgl4?e=PSjeJa" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtemCxwVKCBJGkTUNol3Bg01UNDhRMTRUUE9ZNjA0VU9ZV1hFMjYxVFBYSS4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="IT">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">02</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">IT</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Digital Forensics in Cyber Security</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Cyber</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Forensics</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Kalyani Salvi</div>
+        <div class="mt-1 font-mono text-xs text-black/60">83693 43321</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/kalyanins_sies_edu_in/IQC4Il0APNnWQL6fjLCDC9wSAUAKZF6cX-Mc7pPJ8AM8e9Y?e=UiZJaZ" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtS8SbUVzoKFAocaBfy3FVBlUNVpSV01RSFBHSzhTMTdGTzNCVEhFMkJNTy4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="IT">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">03</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">IT</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Foundation to Data Structures, Analysis &amp; Problem Solving</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">DSA</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Problem Solving</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Mrinal Khadse</div>
+        <div class="mt-1 font-mono text-xs text-black/60">98193 44929</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/kalyanins_sies_edu_in/IQDdcrcdzLtXQpuJXBLkB3X-Ac39m8Pg6Rtz8OJZD-QBB7c?e=isY6W8" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtS8SbUVzoKFAocaBfy3FVBlUQkRHMURCUDFaWEpWVUpUOUlIUDNSOEsxVy4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="IT">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">04</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">IT</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Reinforcement Learning</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">ML</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">RL</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Kalyani Salvi</div>
+        <div class="mt-1 font-mono text-xs text-black/60">83693 43321</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/kalyanins_sies_edu_in/IQDWexlIy3yIQ76frNqbflg0AUSJ96D2RBqS0qkNbPm08Xk?e=gOQMWO" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtS8SbUVzoKFAocaBfy3FVBlUMVpaMlBWTDFGNEIyRjc1R0RTVEdQNk4yRy4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="CSE-IOT">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">05</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">CSE-IOT</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">VAPT and Digital Forensics — Comprehensive Hands-on Training</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">VAPT</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Forensics</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Hands-on</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Ashwini Khillari</div>
+        <div class="mt-1 font-mono text-xs text-black/60">98608 09283</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://docs.google.com/document/d/1U1WCyZHJ-naFdefctUxV5Ys5AEOBE8sI/edit?usp=sharing&ouid=100663782871862375602&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtUq3SuP8ZKJHlcOo-1c4PjlUODdKMEY3QTYyQzZYNllWNExUR1kyODBIRy4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="CSE-IOT">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">06</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">CSE-IOT</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Hardware Hacking &amp; IoT Security — Hands-on Training</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Hardware</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Security</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Manosha S</div>
+        <div class="mt-1 font-mono text-xs text-black/60">80971 68407</div>
+      </div>
+       <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/manoshas_sies_edu_in/IQCMnPKVLlq3Q71K426p2yhnAdc0lfNzP9rNxT96f6OQZzU?e=XeYpAK" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtfJiBc2YANxJm8TY7B2jbVhUNkVGNlA5NzYxWjEzRjdGUlc4UEdZQUQ1Wi4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="EXTC">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">07</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">EXTC</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Large Language Models</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">LLM</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">GenAI</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Priyanka Kadam</div>
+        <div class="mt-1 font-mono text-xs text-black/60">—</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/priyankak_sies_edu_in/IQBi5o3iPCXfQLWDmH3Q8FrYAW9HZqaHUFIIPdBFqHUk2h8?e=bmMY3A&clickParams=eyAiWC1BcHBOYW1lIiA6ICJNaWNyb3NvZnQgRXhjZWwiLCAiWC1BcHBWZXJzaW9uIiA6ICIxNi4wLjE5MTI3LjIwMzAyIiwgIk9TIiA6ICJXaW5kb3dzIiB9" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtVqRTAScS3ZGjF84klWmAKxUODhUODIyRzAyUk1LN1dTT0pRNFAwTFBOWS4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="EXTC">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">08</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">EXTC</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Industrial Communication Antennas — Design, Simulation, Optimization</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Antennas</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Simulation</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Dr. Sonal Hutke</div>
+        <div class="mt-1 font-mono text-xs text-black/60">—</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/sonalj_sies_edu_in/IQDfRZ6ehyoPQojVcw0KiCMLAYV_t4GH70Jp3GBkYxZV1TE?e=wsEFwJ&clickParams=eyAiWC1BcHBOYW1lIiA6ICJNaWNyb3NvZnQgRXhjZWwiLCAiWC1BcHBWZXJzaW9uIiA6ICIxNi4wLjE5MTI3LjIwMzAyIiwgIk9TIiA6ICJXaW5kb3dzIiB9" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtWl7aSRD_YBDrwVWJpaI6iJUQkVCOEswNjlWUFc0SjlWN0dMSEVJTVVLRy4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="AIML">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">09</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">AIML</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Next Generation AI — From Data Visualization to Agentic AI</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Agentic AI</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">DataViz</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Dr. Arundathi Das · Dr. Bhagyalakshmi</div>
+        <div class="mt-1 font-mono text-xs text-black/60">83675 88761 · 83568 08424</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/arundhatid_sies_edu_in/IQBrxhZa5MGoQK9vsvPvv5PuAWLDzQSGzVkzUyHZ_eNB-kU?e=urKQcc" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtepDz0MFe6ZHoG7smH7PGWhUM0ZYWEFKSzU5SzNTOTdaWFhMVUZVVjdKWi4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="AIML">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">10</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">AIML</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Web Technology</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Web</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Full-stack</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Gilu · Prof. Jegan N.</div>
+        <div class="mt-1 font-mono text-xs text-black/60">81118 52608 · 99306 23329</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://docs.google.com/document/d/1lHQpGosGAfPheh0LSiJzpbkmdG0dXgAm/edit?usp=sharing&ouid=100663782871862375602&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtVqym4tCZJVNmwr9QJL9jSpURVJWTlhGUEM0QVVHREMwUjlCQldWRzQ3TC4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="AIDS">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">11</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">AIDS</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">SkillStack — Full Stack Development Program</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Full-stack</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Dev</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Megha Jain · Prof. Shiney Varghese · Dr. Vidya Keshwani</div>
+        <div class="mt-1 font-mono text-xs text-black/60">96195 84910 · 97023 66235 · 98691 85714</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/meghaj_sies_edu_in/IQDm86JvNfSDRpyDSFD2WffBAYvBPGPUvMZe7YXCRsAhV0w?e=k0xfPf" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtTFqJFL8BZBJseGxSdKDg91URUFQNzBCOUEyRlFJUElHRThXWTdLWklCVy4u" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="AIDS">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">12</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">AIDS</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Modern DevOps and Industry Cloud Automation</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">DevOps</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Cloud</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Akshay A. Jadhav · Prof. Deepali Jagtap · Dr. Neethu Sabu</div>
+        <div class="mt-1 font-mono text-xs text-black/60">94053 91714 · 98906 70616 · 63695 55878</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/deepaligj_sies_edu_in/IQDLgiQOINb3SoZQ5eAjHRWpAcT7NHE6h-AUrCGjlSEFfMg?e=kUMNQj" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtSiyI6W5oblPntK-TBHG0fZUMEpGUlU5RVhJQ1FZNjVOODBWWjVYWkVaUC4u" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="AIDS">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">13</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">AIDS</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Blockchain Technology and its Applications</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Blockchain</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Web3</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Dr. Rizwana Siddiqui · Prof. Krishna Kartika</div>
+        <div class="mt-1 font-mono text-xs text-black/60">96191 97014 · 83745 01860</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://drive.google.com/file/d/1xc64vd97RB-1x-NR9I440r9QQo2zivC5/view?usp=sharing" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtWalKxKukkBHirsyCVIP0QNUNFBGTzIxTlJDM1o4UUU0R1ZMNEtLUEVRUS4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="CE">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">14</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">CE</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Web Application and Security</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Web</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">AppSec</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Dr. Namrata J. Patel · Dr. Kalyani Pampattiwar · Prof. Kranti Bade</div>
+        <div class="mt-1 font-mono text-xs text-black/60">—</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/namratap_sies_edu_in/IQBqILr2ujGQTbUzCdzw67pMAbeFy62jhJ8HFVdezOEjFeI?e=k2uLkY" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtRP1z-j1Vr1Cr08UyLrE1aZUMVU5VTBUSlAxQVpRUTFWNzUwVVVOTzZESi4u" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="CE">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">15</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">CE</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">AI-Powered Data Analytics &amp; Intelligent Digital Signal Processing</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Analytics</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">DSP</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Dr. Deepika Kumari · Dr. Anushree Goud · Prof. Smruti Vyavahare</div>
+        <div class="mt-1 font-mono text-xs text-black/60">—</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://drive.google.com/file/d/1QvmK_qPStSRLrkZMTc8c8x9JpjjfCEqY/view?pli=1" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSczjMoeFbRp4tPXIGuMzTm0f1E2LUKv5lVbBuRx-Mt8RZww-g/viewform?pli=1" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="CE">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">16</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">CE</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">High Performance Computing and Quantum Computing</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">HPC</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Quantum</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Prof. Prachi Shahane · Dr. Varsha Patil · Dr. Rizwana Shaikh</div>
+        <div class="mt-1 font-mono text-xs text-black/60">—</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://siescms-my.sharepoint.com/:w:/g/personal/prachis_sies_edu_in/IQDnIzCvk8n9Romlm1mO53ZvARSGdBLt_p23K5QVU1lHczE?e=As7wdr" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrtaZFeipRcJBDrPGaMmvBO09UNEFQTDMxNU44T1dHNEpWTDExR1U4NktTVi4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li>
+    <li class="course-row group grid grid-cols-12 gap-4 md:gap-6 border-b border-black/15 py-8 transition-colors hover:bg-black/[0.03]" data-dept="CE">
+      <div class="col-span-2 md:col-span-1"><span class="font-mono text-xs text-black/60 idx">17</span></div>
+      <div class="col-span-10 md:col-span-2"><span class="inline-flex items-center rounded-full border border-black/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest">CE</span></div>
+      <div class="col-span-12 md:col-span-5">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Agentic AI — From Foundation to Industrial Automation</h3>
+        <div class="mt-3 flex flex-wrap gap-1.5"><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Agentic AI</span><span class="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-black/70">Automation</span></div>
+      </div>
+      <div class="col-span-12 md:col-span-2">
+        <div class="text-sm">Dr. Arathi B · Dr. Ujwala R · Prof. Rasika M</div>
+        <div class="mt-1 font-mono text-xs text-black/60">—</div>
+      </div>
+      <div class="col-span-12 md:col-span-2 flex flex-col items-start md:items-end gap-2">
+        <a href="https://drive.google.com/file/d/1qTnYFySZS5BLn5pVDTjsEKnc3Yc5Z3lm/view?usp=sharing" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black/30 hover:border-black hover:bg-black hover:text-[#f7f3e8]">Brochure</a>
+        <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=NNxdQGDW5Ua1Lb_QvhVrteKNPoTy77hDt1RjpenJBuNURURXRUc2Sk40SDE0V0xCWVo2S1o2R0lISC4u&route=shorturl" target="_blank" rel="noreferrer noopener" class="inline-flex w-full md:w-auto items-center justify-between gap-2 rounded-full border px-3.5 py-2 text-xs font-medium transition border-black bg-black text-[#f7f3e8] hover:opacity-90">Register →</a>
+      </div>
+    </li></ol>
+  </section>
+
+  <section class="border-t border-black/15" style="background:rgba(26,22,34,0.03)">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <p class="font-mono text-xs uppercase tracking-[0.25em] text-black/60">§ 03 — Departments</p>
+      <h2 class="font-display mt-2 text-5xl md:text-6xl">Seven houses, one school</h2>
+      <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <button data-dept-jump="ECS" class="group relative overflow-hidden rounded-2xl border border-black/15 bg-[#f7f3e8] p-6 text-left transition hover:-translate-y-0.5 hover:border-black/40">
+        <div class="flex items-baseline justify-between">
+          <span class="font-mono text-xs text-black/60">01</span>
+          <span class="rounded-full bg-black/5 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-black/60">1 courses</span>
+        </div>
+        <div class="font-display mt-6 text-4xl">ECS</div>
+        <div class="mt-1 text-sm text-black/80">Electronics &amp; Computer Science</div>
+        <div class="mt-4 font-mono text-xs uppercase tracking-widest text-[#d4b400] opacity-0 transition group-hover:opacity-100">Sensors · IoT →</div>
+      </button>
+      <button data-dept-jump="IT" class="group relative overflow-hidden rounded-2xl border border-black/15 bg-[#f7f3e8] p-6 text-left transition hover:-translate-y-0.5 hover:border-black/40">
+        <div class="flex items-baseline justify-between">
+          <span class="font-mono text-xs text-black/60">02</span>
+          <span class="rounded-full bg-black/5 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-black/60">3 courses</span>
+        </div>
+        <div class="font-display mt-6 text-4xl">IT</div>
+        <div class="mt-1 text-sm text-black/80">Information Technology</div>
+        <div class="mt-4 font-mono text-xs uppercase tracking-widest text-[#d4b400] opacity-0 transition group-hover:opacity-100">Security · DSA · RL →</div>
+      </button>
+      <button data-dept-jump="CSE-IOT" class="group relative overflow-hidden rounded-2xl border border-black/15 bg-[#f7f3e8] p-6 text-left transition hover:-translate-y-0.5 hover:border-black/40">
+        <div class="flex items-baseline justify-between">
+          <span class="font-mono text-xs text-black/60">03</span>
+          <span class="rounded-full bg-black/5 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-black/60">2 courses</span>
+        </div>
+        <div class="font-display mt-6 text-4xl">CSE-IOT</div>
+        <div class="mt-1 text-sm text-black/80">CSE — Internet of Things</div>
+        <div class="mt-4 font-mono text-xs uppercase tracking-widest text-[#d4b400] opacity-0 transition group-hover:opacity-100">VAPT · Hardware →</div>
+      </button>
+      <button data-dept-jump="EXTC" class="group relative overflow-hidden rounded-2xl border border-black/15 bg-[#f7f3e8] p-6 text-left transition hover:-translate-y-0.5 hover:border-black/40">
+        <div class="flex items-baseline justify-between">
+          <span class="font-mono text-xs text-black/60">04</span>
+          <span class="rounded-full bg-black/5 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-black/60">2 courses</span>
+        </div>
+        <div class="font-display mt-6 text-4xl">EXTC</div>
+        <div class="mt-1 text-sm text-black/80">Electronics &amp; Telecomm.</div>
+        <div class="mt-4 font-mono text-xs uppercase tracking-widest text-[#d4b400] opacity-0 transition group-hover:opacity-100">LLM · Antennas →</div>
+      </button>
+      <button data-dept-jump="AIML" class="group relative overflow-hidden rounded-2xl border border-black/15 bg-[#f7f3e8] p-6 text-left transition hover:-translate-y-0.5 hover:border-black/40">
+        <div class="flex items-baseline justify-between">
+          <span class="font-mono text-xs text-black/60">05</span>
+          <span class="rounded-full bg-black/5 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-black/60">2 courses</span>
+        </div>
+        <div class="font-display mt-6 text-4xl">AIML</div>
+        <div class="mt-1 text-sm text-black/80">AI &amp; Machine Learning</div>
+        <div class="mt-4 font-mono text-xs uppercase tracking-widest text-[#d4b400] opacity-0 transition group-hover:opacity-100">Agentic · Web →</div>
+      </button>
+      <button data-dept-jump="AIDS" class="group relative overflow-hidden rounded-2xl border border-black/15 bg-[#f7f3e8] p-6 text-left transition hover:-translate-y-0.5 hover:border-black/40">
+        <div class="flex items-baseline justify-between">
+          <span class="font-mono text-xs text-black/60">06</span>
+          <span class="rounded-full bg-black/5 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-black/60">3 courses</span>
+        </div>
+        <div class="font-display mt-6 text-4xl">AIDS</div>
+        <div class="mt-1 text-sm text-black/80">AI &amp; Data Science</div>
+        <div class="mt-4 font-mono text-xs uppercase tracking-widest text-[#d4b400] opacity-0 transition group-hover:opacity-100">Full-stack · DevOps · Chain →</div>
+      </button>
+      <button data-dept-jump="CE" class="group relative overflow-hidden rounded-2xl border border-black/15 bg-[#f7f3e8] p-6 text-left transition hover:-translate-y-0.5 hover:border-black/40">
+        <div class="flex items-baseline justify-between">
+          <span class="font-mono text-xs text-black/60">07</span>
+          <span class="rounded-full bg-black/5 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-black/60">4 courses</span>
+        </div>
+        <div class="font-display mt-6 text-4xl">CE</div>
+        <div class="mt-1 text-sm text-black/80">Computer Engineering</div>
+        <div class="mt-4 font-mono text-xs uppercase tracking-widest text-[#d4b400] opacity-0 transition group-hover:opacity-100">Web Sec · HPC · Agentic →</div>
+      </button></div>
+    </div>
+  </section>
+
+  <footer class="border-t border-black/15">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
+      <div class="font-display text-2xl">VAC · FH<span style="color:#e8c700">·</span>2026</div>
+      <p class="max-w-md text-sm text-black/60">Brochures and registration links are coordinated by individual faculty. For queries, contact the program coordinator listed on each card.</p>
+      <div class="font-mono text-xs uppercase tracking-[0.2em] text-black/60">© 2026 — Compiled June</div>
+    </div>
+  </footer>
+</main>
+<script>
+  const chips = document.querySelectorAll('#chips .chip');
+  const rows = document.querySelectorAll('#rows .course-row');
+  function setFilter(f) {
+    chips.forEach(c => {
+      const on = c.dataset.f === f;
+      c.classList.toggle('active', on);
+      if (on) { c.classList.add('border-black','bg-black','text-[#f7f3e8]'); c.classList.remove('border-black/20','text-black/70'); }
+      else { c.classList.remove('border-black','bg-black','text-[#f7f3e8]'); c.classList.add('border-black/20','text-black/70'); }
+    });
+    let n = 0;
+    rows.forEach(r => {
+      const show = f === 'ALL' || r.dataset.dept === f;
+      r.style.display = show ? '' : 'none';
+      if (show) { n++; const idx = r.querySelector('.idx'); if (idx) idx.textContent = String(n).padStart(2,'0'); }
+    });
+  }
+  chips.forEach(c => c.addEventListener('click', () => setFilter(c.dataset.f)));
+  document.querySelectorAll('[data-dept-jump]').forEach(b => b.addEventListener('click', () => {
+    setFilter(b.dataset.deptJump);
+    document.getElementById('catalogue').scrollIntoView({behavior:'smooth'});
+  }));
+</script>
+</body>
+</html>
